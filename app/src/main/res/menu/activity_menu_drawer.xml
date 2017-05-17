@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/chat_medico"
+            android:icon="@drawable/ic_chat_medico"
+            android:title="@string/menu_chat_medico" />
+        <item
+            android:id="@+id/chat"
+            android:icon="@drawable/ic_chat"
+            android:title="@string/menu_chat" />
+        <item
+            android:id="@+id/respirar"
+            android:icon="@drawable/ic_respirar"
+            android:title="@string/menu_respirar" />
+        <item
+            android:id="@+id/graficos"
+            android:icon="@drawable/ic_graficos"
+            android:title="@string/menu_graficos" />
+    </group>
+
+    <item android:title="Configurações">
+        <menu>
+            <item
+                android:id="@+id/perfil"
+                android:icon="@drawable/ic_perfil"
+                android:title="@string/menu_perfil" />
+            <item
+                android:id="@+id/pessoas"
+                android:icon="@drawable/ic_pessoas"
+                android:title="@string/menu_pessoas" />
+            <item
+                android:id="@+id/avisos"
+                android:icon="@drawable/ic_avisos"
+                android:title="@string/menu_avisos" />
+        </menu>
+    </item>
+
+</menu>
