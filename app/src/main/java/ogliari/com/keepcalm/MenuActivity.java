@@ -104,11 +104,19 @@ public class MenuActivity extends AppCompatActivity
 
         } else if (id == R.id.chat) {
 
+            fragmentClass = AvisosFragment.class;
+
         } else if (id == R.id.respirar) {
+
+            fragmentClass = AvisosFragment.class;
 
         } else if (id == R.id.graficos) {
 
+            fragmentClass = AvisosFragment.class;
+
         } else if (id == R.id.perfil) {
+
+            fragmentClass = AvisosFragment.class;
 
         } else if (id == R.id.pessoas) {
 

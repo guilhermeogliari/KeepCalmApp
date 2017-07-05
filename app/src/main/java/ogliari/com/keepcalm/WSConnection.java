@@ -7,6 +7,7 @@ import org.java_websocket.client.WebSocketClient;
 import org.java_websocket.handshake.ServerHandshake;
 
 import java.net.URI;
+import java.net.URISyntaxException;
 
 /**
  * Created by guilhermeogliari on 16/05/17.
@@ -14,10 +15,10 @@ import java.net.URI;
 
 public class WSConnection extends WebSocketClient {
 
-    Mensagem messagens = Mensagem.getInstance();
+    ChatFragment chatFragment;
 
-    public WSConnection(URI uri) {
-        super(uri);
+    public WSConnection() throws URISyntaxException {
+        super(new URI("ws://10.0.2.2:9080/KeepCalmServer/ws"));
     }
 
     @Override
@@ -27,7 +28,7 @@ public class WSConnection extends WebSocketClient {
 
     @Override
     public void onMessage(String s) {
-        messagens.setMensagem(s);
+
     }
 
     @Override
