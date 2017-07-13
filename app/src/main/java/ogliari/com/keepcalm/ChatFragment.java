@@ -79,15 +79,16 @@ public class ChatFragment extends Fragment{
 
                         parent.setLayoutParams(new LinearLayout.LayoutParams(AppBarLayout.LayoutParams.MATCH_PARENT, AppBarLayout.LayoutParams.WRAP_CONTENT));
                         parent.setOrientation(LinearLayout.HORIZONTAL);
-                        parent.setPadding(dp_10,dp_10,dp_10,dp_10);
 
                         RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(AppBarLayout.LayoutParams.MATCH_PARENT,
-                                AppBarLayout.LayoutParams.MATCH_PARENT);
+                                AppBarLayout.LayoutParams.WRAP_CONTENT);
 
                         p.addRule(RelativeLayout.BELOW, id);
                         parent.setLayoutParams(p);
 
-                        parent.setId(id++);
+                        id = id + 1;
+
+                        parent.setId(id);
 
                         ImageView imageView = new ImageView(rootView.getContext());
 
@@ -185,7 +186,16 @@ public class ChatFragment extends Fragment{
 
         parent.setLayoutParams(new LinearLayout.LayoutParams(AppBarLayout.LayoutParams.MATCH_PARENT, AppBarLayout.LayoutParams.WRAP_CONTENT));
         parent.setOrientation(LinearLayout.HORIZONTAL);
-        parent.setPadding(dp_10,dp_10,dp_10,dp_10);
+
+        RelativeLayout.LayoutParams p = new RelativeLayout.LayoutParams(AppBarLayout.LayoutParams.MATCH_PARENT,
+                AppBarLayout.LayoutParams.WRAP_CONTENT);
+
+        p.addRule(RelativeLayout.BELOW, id);
+        parent.setLayoutParams(p);
+
+        id = id + 1;
+
+        parent.setId(id);
 
         TextView textView = new TextView(rootView.getContext());
 
